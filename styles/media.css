@@ -1,0 +1,30 @@
+@media (max-width: 800px) {
+    .main-content {
+       margin: 0rem 2rem;
+    }
+    .content {
+       grid-area: 1 / 1 / 13 / 5;
+    }
+    .aside {
+       grid-area: 1 / 5 / 13 / 6;
+    }
+    .posts-grid {
+       grid-template-columns: repeat(1, 1fr);
+    }
+ }
+ 
+ /* ------ Viewpot less than or equal to 600 (Phone view) ------ */
+ 
+ @media (max-width: 600px) {
+    .main-content {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(6, 1fr);
+    }
+    .content {
+       grid-area: 1 / 1 / 4 / 2;
+    }
+    .aside {
+       grid-area: 4 / 1 / 7 / 2;
+    }
+ }

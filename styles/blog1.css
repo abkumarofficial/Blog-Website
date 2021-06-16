@@ -1,0 +1,96 @@
+.head-conatiner {
+    height: 800px;
+    background-image: url("../images/blog1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .main-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    height: auto;
+ }
+
+ .content {
+    grid-area: 1 / 2 / 13 / 4;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ p {
+    letter-spacing: 0.08rem;
+    line-height: 1.7;
+ }
+ 
+ .bike-img {
+    border-radius: 5%;
+    max-height: 400px;
+    max-width: 400px;
+    justify-self: center;
+ }
+ 
+ .bike-caption {
+    margin: 3px 20px;
+    text-align: center;
+ }
+
+ .aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    grid-area: 1 / 4 / 13 / 5;
+ }
+ 
+ .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin: 0 auto;
+ }
+ 
+ .personal-img {
+    margin-top: 130px;
+    height: 200px;
+    border-radius: 100%;
+ }
+ 
+ .personal-img-cap {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Roboto";
+ }
+
+ @media (max-width: 800px) {
+    .main-content {
+       margin: 0rem 2rem;
+    }
+    .content {
+       grid-area: 1 / 1 / 13 / 5;
+    }
+    .aside {
+       grid-area: 1 / 5 / 13 / 6;
+    }
+    .posts-grid {
+       grid-template-columns: repeat(1, 1fr);
+    }
+ }
+ 
+ /* ------ Viewpot less than or equal to 600 (Phone view) ------ */
+ 
+ @media (max-width: 600px) {
+    .main-content {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(6, 1fr);
+    }
+    .content {
+       grid-area: 1 / 1 / 4 / 2;
+    }
+    .aside {
+       grid-area: 4 / 1 / 7 / 2;
+    }
+ }

@@ -60,7 +60,7 @@ img {
 }
 
 #blogHeader {
-    background-image: url(images/IMG_20201217_092809.jpg);
+    background-image: url('../images/IMG_20201217_092809.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
