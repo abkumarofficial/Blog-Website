@@ -38,7 +38,7 @@ body{
     margin-top: 15vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    justify-items: center;
+    /* justify-items: center; */
     grid-gap: 40px 20px;
     padding-bottom: 100px;
     padding-right: 50px;
@@ -61,11 +61,10 @@ img {
 
 #blogHeader {
     background-image: url('../images/IMG_20201217_092809.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 70vh;
-    width: 100%;
+    height: 800px;
 }
 
 #header {
@@ -116,3 +115,66 @@ img {
 #linkcolor {
     color: white;
 }
+
+/* ------ Viewpot less than or equal to 800 (Tablet view)------ */
+
+@media (max-width: 1000px) {
+    #blogHeader {
+        width: 1000px;
+        height: 500px;
+    }
+    /* .main-content {
+      margin: 0rem 2rem;
+    }
+    .content {
+      grid-area: 1 / 1 / 13 / 5;
+    }
+    .aside {
+      grid-area: 1 / 5 / 13 / 6;
+    }
+    .posts-grid {
+      grid-template-columns: repeat(1, 1fr);
+    } */
+  }
+  
+  /* ------ Viewpot less than or equal to 600 (Phone view) ------ */
+  
+  @media (max-width: 600px) {
+    #blogHeader {
+        width: 600px;
+        height: 500px;
+    }
+    img {
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    
+    .card {
+        width: 200px;
+        background-color: white;
+        border-radius: 20px;
+        /* cursor: pointer; */
+    }
+  }
+
+  @media (max-width: 400px) {
+    #blogHeader {
+        width: 350px;
+        height: 500px;
+    }
+    img {
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    
+    .card {
+        width: 200px;
+        background-color: white;
+        border-radius: 20px;
+        /* cursor: pointer; */
+    }
+  }
